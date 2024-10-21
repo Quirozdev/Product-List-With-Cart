@@ -45,7 +45,7 @@ const totalPrice = computed(() => {
         <p class="text-sm text-rose-500">We hope you enjoy your food!</p>
       </div>
       <div
-        class="flex flex-col max-h-60 overflow-y-scroll rounded-lg bg-rose-100 gap-4 p-6"
+        class="flex flex-col max-h-60 overflow-y-auto rounded-lg bg-rose-100 gap-4 p-6"
       >
         <div
           v-for="cartItem in productsWithQuantities"
