@@ -1,4 +1,6 @@
-export interface Product {
+export default interface Product {
+  id: number
+  name: string
   category: string
   image: {
     desktop: string
@@ -6,6 +8,5 @@ export interface Product {
     tablet: string
     thumbnail: string
   }
-  name: string
   price: number
 }
