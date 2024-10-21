@@ -4,11 +4,12 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/prod
 
 <a href="https://quirozdev.github.io/Product-List-With-Cart/" target="_blank">Live Site Demo</a>
 
+<img src="./demo-gif.gif" alt="Demo GIF" />
+
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Demo GIF](#demo-gif)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,8 +27,6 @@ Users should be able to:
 - Reset their selections when they click "Start New Order"
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-
-### Demo GIF
 
 ### Links
 
