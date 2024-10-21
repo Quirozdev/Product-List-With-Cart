@@ -36,7 +36,7 @@ const totalPrice = computed(() => {
     ></div>
     <div class="bg-rose-50 fixed flex flex-col gap-4 p-8">
       <img
-        src="/public/images/icon-order-confirmed.svg"
+        src="/images/icon-order-confirmed.svg"
         alt="Order Confirmed Icon"
         class="w-12 h-12"
       />
