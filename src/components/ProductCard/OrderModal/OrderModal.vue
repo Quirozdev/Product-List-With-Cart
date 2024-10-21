@@ -36,7 +36,7 @@ const totalPrice = computed(() => {
     ></div>
     <div class="bg-rose-50 fixed flex flex-col gap-4 p-8">
       <img
-        src="/images/icon-order-confirmed.svg"
+        src="./images/icon-order-confirmed.svg"
         alt="Order Confirmed Icon"
         class="w-12 h-12"
       />
@@ -54,7 +54,7 @@ const totalPrice = computed(() => {
         >
           <div class="flex gap-4 pb-2">
             <img
-              :src="`/images/${cartItem.product.image.thumbnail}`"
+              :src="`./images/${cartItem.product.image.thumbnail}`"
               :alt="cartItem.product.name"
               class="w-12 h-12 rounded-lg hidden sm:block"
             />

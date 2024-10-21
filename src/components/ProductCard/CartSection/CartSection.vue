@@ -26,7 +26,7 @@ const totalPrice = computed(() => {
       Your Cart ({{ totalProducts }})
     </h2>
     <div v-if="totalProducts === 0" class="flex flex-col items-center">
-      <img src="/images/illustration-empty-cart.svg" alt="Empty Cart" />
+      <img src="./images/illustration-empty-cart.svg" alt="Empty Cart" />
       <p class="text-rose-500 font-semibold text-center px-8">
         Your added items will appear here
       </p>
@@ -47,7 +47,7 @@ const totalPrice = computed(() => {
       <div
         class="flex items-center gap-4 justify-center bg-rose-50 py-6 px-4 rounded-lg"
       >
-        <img src="/images/icon-carbon-neutral.svg" alt="Carbon Neutral Icon" />
+        <img src="./images/icon-carbon-neutral.svg" alt="Carbon Neutral Icon" />
         <p>
           This is a
           <span class="font-semibold text-rose-950">carbon-neutral</span>
