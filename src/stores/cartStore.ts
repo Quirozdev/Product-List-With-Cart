@@ -39,4 +39,7 @@ export const cartStore = ref<Cart>({
     })
     return cartItems
   },
+  clear() {
+    this.cart = {}
+  },
 })

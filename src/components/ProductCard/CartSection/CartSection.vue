@@ -4,6 +4,7 @@ import { computed } from 'vue'
 import ProductRow from './ProductRow/ProductRow.vue'
 import { productsStore } from '@/stores/productsStore'
 import { formatPrice } from '@/utils/priceFormatter'
+import { modalStore } from '@/stores/modalStore'
 
 const totalProducts = computed(() => {
   return cartStore.value.getTotalProducts()
@@ -30,19 +31,38 @@ const totalPrice = computed(() => {
         Your added items will appear here
       </p>
     </div>
-    <article v-else>
+    <article v-else class="flex flex-col gap-4">
       <ProductRow
         v-for="cartItem in cartStore.getCartItems()"
         :key="cartItem.productId"
         :product-id="cartItem.productId"
         :quantity="cartItem.quantity"
       />
-      <div class="flex justify-between pt-4">
+      <div class="flex justify-between">
         <p>Order Total</p>
-        <p class="font-bold text-2xl text-rose-900">
+        <p class="font-bold text-2xl text-rose-950">
           ${{ formatPrice(totalPrice) }}
         </p>
       </div>
+      <div
+        class="flex items-center gap-4 justify-center bg-rose-50 py-6 px-4 rounded-lg"
+      >
+        <img
+          src="/public/images/icon-carbon-neutral.svg"
+          alt="Carbon Neutral Icon"
+        />
+        <p>
+          This is a
+          <span class="font-semibold text-rose-950">carbon-neutral</span>
+          delivery
+        </p>
+      </div>
+      <button
+        class="bg-red px-2 py-3 rounded-full text-rose-50 hover:bg-[#952d0d]"
+        @click="modalStore.toggleModal()"
+      >
+        Confirm Order
+      </button>
     </article>
   </aside>
 </template>

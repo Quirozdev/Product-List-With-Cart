@@ -17,4 +17,5 @@ export default interface Cart {
   getTotalProducts: () => Quantity
   isProductInCart: (productId: Product['id']) => boolean
   getCartItems: () => CartItem[]
+  clear: () => void
 }

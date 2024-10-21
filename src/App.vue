@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CartSection from './components/ProductCard/CartSection/CartSection.vue'
+import OrderModal from './components/ProductCard/OrderModal/OrderModal.vue'
 import ProductCard from './components/ProductCard/ProductCard.vue'
 import { productsStore } from './stores/productsStore'
 </script>
@@ -21,5 +22,6 @@ import { productsStore } from './stores/productsStore'
       </section>
     </section>
     <CartSection class="flex-1" />
+    <OrderModal />
   </main>
 </template>

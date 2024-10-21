@@ -22,7 +22,7 @@ const totalPrice = computed(() => {
 <template>
   <div class="border-b-[1px] py-4 flex gap-4 justify-between items-start">
     <div class="flex flex-col gap-1">
-      <p class="font-semibold">{{ product.name }}</p>
+      <p class="font-semibold text-rose-950">{{ product.name }}</p>
       <div class="flex gap-4 items-center">
         <p class="text-red font-semibold">{{ quantity }}x</p>
         <p class="text-rose-400">@ ${{ formatPrice(product.price) }}</p>
